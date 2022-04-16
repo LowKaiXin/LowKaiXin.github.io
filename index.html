@@ -1,33 +1,27 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!DOCTYPE html>
 <html>
 <head>
-<title>My first styled page</title>
-<link rel="stylesheet" href="mystyle.css">
+  <meta charset="utf-8">
+<title>Puzzle</title>
+<script src="puzzleScript.js" type="text/javascript">
+</script>
 </head>
 <body>
-<!-- Site navigation menu -->
-<ul class="navbar">
-  <li><a href="https://www.baidu.com/">Home page</a>
-  <li><a href="musings.html">Musings</a>
-  <li><a href="town.html">My town</a>
-  <li><a href="links.html">Links</a>
-</ul>
-
-<!-- Main content -->
-<h1>My first styled page</h1>
-
-<p>Welcome to my styled page!
-
-<p>It lacks images, but at least it has style.
-And it has links, even if they don't go
-anywhere&hellip;
-
-<p>There should be more here, but I don't know
-what yet.
-
-<!-- Sign and date the page, it's only polite! -->
-<address>Made 5 April 2004<br>
-  by myself.</address>
-
+<h1 style="background-color:pink;padding:20px;text-align:center">·~Puzzle Game 数字解谜~·</h1>
+<h2>请仔细观察下列图形，找出图形所代表的数字。</h2>
+<h3>Look carefully at the following graphs and identify the number represented by the graph.</h3>
+<p style="font-size:48px">
+&#128512; &#128516; &#128525; &#128151;
+</p>
+<img src="JSPuzzle.jpg" width="600" height="400">
+<br>
+<br>
+<button type="button" onclick="enterAnswer()">点此输入答案...</button>
+<button type="button" onclick="getAnswer()">点此获得正确答案...</button>
+<button type="button" onclick="getHint()">点此获得提示...</button>
+<style type="text/css">
+  #answers{padding:30px;background-color:lightyellow}
+</style>
+<h4 id="answers">你的答案：</h4>
 </body>
 </html>
