@@ -1,27 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+<meta charset="utf-8">
 <title>Puzzle</title>
-<script src="puzzleScript.js" type="text/javascript">
-</script>
+<embed src="music.mp3" hidden="flase" autostart="true" loop="true"></embed>
+<script src="puzzleScript.js" type="text/javascript"></script>
 </head>
+<style type="text/css">
+body {
+	background-image:url('starrynight.gif');
+}
+h1{
+  background-color:pink;
+  background-clip:content-box;
+  border: 10px dotted white;
+  padding:20px;
+  text-align:center;
+  font-family:'Brush Script MT', cursive;
+  font-size: 60px;
+}
+h2 {
+	color:white;
+	text-align:left;
+	font-size:30px
+}
+h3 {
+  color:white;
+  font-family:"Times New Roman";
+	font-size:30px;
+}
+p{
+  font-size:48px;
+}
+h4{
+  background-color: lightyellow;
+  padding:50px;
+  font-size: 30px;
+}
+button{
+    background-color:lightblue;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 9px #999;
+}
+button:hover{
+  background-color: #3e8e41
+}
+
+button:active{
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
 <body>
-<h1 style="background-color:pink;padding:20px;text-align:center">·~Puzzle Game 数字解谜~·</h1>
+<h1>·~ Puzzle Game ~·</h1>
 <h2>请仔细观察下列图形，找出图形所代表的数字。</h2>
 <h3>Look carefully at the following graphs and identify the number represented by the graph.</h3>
-<p style="font-size:48px">
-&#128512; &#128516; &#128525; &#128151;
-</p>
-<img src="JSPuzzle.jpg" width="600" height="400">
+<p>&#128151; &#128151; &#128151; &#128151;</p>
+<img src="JSPuzzle.jpg" width="800" height="600">
 <br>
 <br>
 <button type="button" onclick="enterAnswer()">点此输入答案...</button>
 <button type="button" onclick="getAnswer()">点此获得正确答案...</button>
 <button type="button" onclick="getHint()">点此获得提示...</button>
-<style type="text/css">
-  #answers{padding:30px;background-color:lightyellow}
-</style>
-<h4 id="answers">你的答案：</h4>
+<br>
+<h4 id="answers">你的答案是：</h4>
 </body>
 </html>
